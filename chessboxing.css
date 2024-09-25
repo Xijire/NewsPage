@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Kanit';
+    src: url('./font/Kanit/Kanit-Regular.ttf');
+}
+@font-face {
+    font-family: 'CrimsonText';
+    src:url('./font/CrimsonText/CrimsonText-Regular.ttf')
+}
+body {
+    font-family: 'CrimsonText', serif;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(187, 187, 187);
+    overflow: auto;
+    color: #333;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Kanit",sans-serif;
+}
+
+.header-container {
+    position: relative;
+}
+
+.header-content header h1{
+    font-family: 'Kanit',sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.background-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    
+}
+
+.header-content {
+    position: absolute;
+    top: 25%;
+    left: 2px;      
+    transform: translate(0%, -50%);
+    color: white;
+    text-align: left;
+    padding: 1em;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1em;
+    font-weight: 700;
+    
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 50px;
+    
+}
+
+nav li:hover {
+    background-color: grey;
+    color: #fff;
+    
+}
+
+nav li:hover a {
+    background-color: grey;
+    color: #eaf731;
+}
+
+main {
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    justify-content: center;
+    
+    
+}
+
+.text-content {
+    
+    font-size: 1.2em;
+    
+    line-height: 1.6;
+    overflow: hidden;
+    font-size: 37px;
+    margin: 40px 0;
+}
+
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+}
+.card h2{
+    text-align: center;
+}
+
+.surround {
+    float: right;
+    
+}
+
+content {
+    
+    display: block;
+    padding: 0 8%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.foot {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.foot a {
+    color: white;
+}
+ 
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.map-img {
+    width: 300px;
+    height: 300px;
+}
+
+.table {
+    display: flex;
+}
+
+
+.History  {
+    font-size: 50px;
+}
+.icon1 {
+    font-size: 100px;
+}
+.Rules  {
+    font-size: 50px;
+}
+.icon2 {
+    font-size: 100px;
+}
+.Training  {
+    font-size: 50px;
+}
+.icon3 {
+    font-size: 100px;
+}
+.MVM  {
+    font-size: 50px;
+}
+.icon4 {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 601px){
+    .first-section .left{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .second-section {
+        width: 50%;
+        margin-left: 50px;
+        height: 700px;
+    }
+    .min-width {
+        min-width: 1000px;
+    }
+    
+    .rules-content{
+        font-size: 37px;
+    }
+    
+    .training-content p {
+        font-size: 37px;
+    }
+    .training-content ul li {
+        font-size: 37px;
+    }
+
+    .man-vs-content p {
+        font-size: 37px;
+    }
+    .card h2 {
+        font-size: 37px;
+    }
+    .foot p {
+        font-size: 37px;
+    }
+    .table {
+        font-size: 37px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .first-section .left{
+        width: 100%;
+        
+    }
+    .first-section .left {
+        font-size: 20px;
+    }
+    .first-section .right {
+        font-size: 20px;
+    }
+    .history .min-width {
+        font-size: 20px;
+    }
+    .history-content{
+        font-size: 20px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .card-content{
+        font-size: 20px;
+    }
+    .second-section {
+        width: 100%;
+        
+    }
+    .rules-content{
+        font-size: 20px;
+    }
+
+    
+    .training-content{
+        font-size: 20px;
+    }
+    .man-vs-content{
+        font-size: 20px;
+    }
+    .second-section p {
+        font-size: 20px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav li {
+        display: block;
+        width: 100%;
+    }
+    
+    .nav a {
+        width: 100%;
+        font-size: 19px;
+        display: block;
+        
+    }
+
+    .card {
+        
+        margin: auto;
+    }
+
+    .surround {
+        float: none;
+    }
+
+    .table {
+        display: block;
+        font-size: 20px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+    .header-content header h1{
+        font-size: 58px;
+    }
+}
